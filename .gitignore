@@ -1,0 +1,20 @@
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# Deployment instructions (no need in repo)
+DEPLOYMENT_INSTRUCTIONS.txt
+og-image-template.html
+
+# Keep .htaccess out (Vercel uses vercel.json instead)
+.htaccess

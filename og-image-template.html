@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #2A1A0E;
+    font-family: Georgia, serif;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .bg {
+    position: absolute; inset: 0;
+    background: linear-gradient(135deg, #1a0f07 0%, #2A1A0E 40%, #3d2510 100%);
+  }
+  .border {
+    position: absolute; inset: 24px;
+    border: 1px solid rgba(201,168,76,0.4);
+  }
+  .corner {
+    position: absolute; width: 40px; height: 40px;
+    border-color: #C9A84C;
+  }
+  .tl { top: 24px; left: 24px; border-top: 2px solid; border-left: 2px solid; }
+  .tr { top: 24px; right: 24px; border-top: 2px solid; border-right: 2px solid; }
+  .bl { bottom: 24px; left: 24px; border-bottom: 2px solid; border-left: 2px solid; }
+  .br { bottom: 24px; right: 24px; border-bottom: 2px solid; border-right: 2px solid; }
+  .content {
+    position: relative; text-align: center; z-index: 1;
+  }
+  .brand {
+    font-family: 'Palatino Linotype', Palatino, serif;
+    font-size: 72px; font-weight: 700; letter-spacing: 0.08em;
+    color: #F0E8D8;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+  }
+  .divider {
+    margin: 16px auto; width: 200px; height: 1px;
+    background: linear-gradient(90deg, transparent, #C9A84C, transparent);
+  }
+  .sub {
+    font-family: Arial, sans-serif; font-weight: 300;
+    font-size: 22px; letter-spacing: 0.35em; text-transform: uppercase;
+    color: #C9A84C;
+  }
+  .tagline {
+    margin-top: 28px;
+    font-family: Arial, sans-serif; font-size: 18px;
+    color: rgba(240,232,216,0.65); letter-spacing: 0.05em;
+  }
+  .products {
+    margin-top: 32px; display: flex; gap: 20px; justify-content: center;
+  }
+  .pill {
+    border: 1px solid rgba(201,168,76,0.5);
+    padding: 6px 18px; border-radius: 20px;
+    font-family: Arial, sans-serif; font-size: 14px;
+    color: rgba(240,232,216,0.8); letter-spacing: 0.08em;
+  }
+  .location {
+    margin-top: 28px;
+    font-family: Arial, sans-serif; font-size: 15px;
+    color: rgba(201,168,76,0.7); letter-spacing: 0.12em; text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+<div class="bg"></div>
+<div class="border"></div>
+<div class="corner tl"></div>
+<div class="corner tr"></div>
+<div class="corner bl"></div>
+<div class="corner br"></div>
+<div class="content">
+  <div class="brand">SATYABHAMA</div>
+  <div class="divider"></div>
+  <div class="sub">Decors &amp; Interiors</div>
+  <div class="tagline">Transforming spaces into beautiful experiences</div>
+  <div class="products">
+    <span class="pill">Blinds</span>
+    <span class="pill">Wallpapers</span>
+    <span class="pill">Flooring</span>
+    <span class="pill">Mosquito Mesh</span>
+    <span class="pill">Furnishing</span>
+  </div>
+  <div class="location">📍 Tirupati, Andhra Pradesh &nbsp;·&nbsp; +91 90307 77767</div>
+</div>
+</body>
+</html>
